@@ -1,0 +1,60 @@
+﻿<ns:TXLife xmlns:ns="http://ACORD.org/Standards/Life/2">
+  <ns:UserAuthRequest>
+    <ns:UserLoginName>InterfaceUser</ns:UserLoginName>
+  </ns:UserAuthRequest>
+  <ns:TXLifeRequest>
+    <ns:TransRefGUID>648ad4b6-9f2d-49b7-8a21-8486617b0564</ns:TransRefGUID>
+    <ns:TransType tc="228">Licensing and Appointments</ns:TransType>
+    <ns:TransSubType tc="22800">Producer Inquiry</ns:TransSubType>
+    <ns:TransExeDate>2018-03-15</ns:TransExeDate>
+    <ns:TransExeTime>05:18:35</ns:TransExeTime>
+    <ns:OLifE>
+      <ns:Holding id="ID_Holding_Proposed_Policy">
+        <ns:HoldingTypeCode tc="2">Policy</ns:HoldingTypeCode>
+        <ns:Policy>
+          <ns:ProductCode>23</ns:ProductCode>
+          <ns:PolicyStatus tc="01">Active</ns:PolicyStatus>
+          <ns:ApplicationInfo>
+            <ns:ApplicationJurisdiction tc=""/>
+            <ns:SignedDate>2012-01-01</ns:SignedDate>
+            <ns:ApplicationCollectionDate>2018-03-15</ns:ApplicationCollectionDate>
+          </ns:ApplicationInfo>
+        </ns:Policy>
+      </ns:Holding>
+      <ns:Party id="ID_Agent_01">
+        <ns:GovtID>126313011</ns:GovtID>
+        <ns:Producer>
+          <ns:NIPRNumber>VL730</ns:NIPRNumber>
+          <ns:CarrierAppointment>
+            <ns:DistributionChannelInfo>
+              <ns:DistributionChannel tc="4"/>
+            </ns:DistributionChannelInfo>
+          </ns:CarrierAppointment>
+          <ns:OLifEExtension>
+            <ns:LegalEntityCode>BK908</ns:LegalEntityCode>
+            <ns:DetachedOfficeCode/>
+          </ns:OLifEExtension>
+        </ns:Producer>
+      </ns:Party>
+      <ns:Relation id="ID_Relation_01" OriginatingObjectID="ID_Holding_Proposed_Policy"
+                      RelatedObjectID="ID_Agent_01">
+        <ns:OriginatingObjectType tc="04">Holding</ns:OriginatingObjectType>
+        <ns:RelatedObjectType tc="06">Party</ns:RelatedObjectType>
+        <ns:RelationRoleCode tc="37">Primary Writing Agent</ns:RelationRoleCode>
+        <ns:InterestPercent>100</ns:InterestPercent>
+      </ns:Relation>
+      <ns:Party id="ID_Owner_01">
+        <ns:Address>
+          <ns:AddressStateTC tc="35">NJ</ns:AddressStateTC>
+        </ns:Address>
+      </ns:Party>
+      <ns:Relation id="ID_Relation_Owner01" OriginatingObjectID="ID_Holding_Proposed_Policy"
+                      RelatedObjectID="ID_Owner_01">
+        <ns:OriginatingObjectType tc="04">Holding</ns:OriginatingObjectType>
+        <ns:RelatedObjectType tc="06">Party</ns:RelatedObjectType>
+        <ns:RelationRoleCode tc="08">Owner</ns:RelationRoleCode>
+        <ns:InterestPercent>100</ns:InterestPercent>
+      </ns:Relation>
+    </ns:OLifE>
+  </ns:TXLifeRequest>
+</ns:TXLife>

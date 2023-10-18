@@ -1,0 +1,66 @@
+{
+  "Envelope": {
+    "Header": {
+      "Security": {
+        "UsernameToken": {
+          "Username": "NTTAgtVldWSqauser",
+          "Password": "VcN-zG29])"
+        }
+      }
+    },
+    "Body": {
+      "GetEAppAgentValidationDetails": {
+        "request": {
+          "TXLifeRequest": {
+            "TransRefGUID": "dfeb2b11-3552-4b96-af98-2eff7f6eead7",
+            "TransType": "Producer Inquiry",
+            "TransSubType": "Can Producer Sell",
+            "TransExeDate": "2022-06-17",
+            "TransExeTime": "10:33:00.6354377-04:00",
+            "OLifE": {
+              "SourceInfo": {
+                "SourceInfoName": "FireLightEApp"
+              },
+              "Holding": {
+                "HoldingTypeCode": "Policy",
+                "CurrencyTypeCode": "USD (United States Dollar)",
+                "Policy": {
+                  "LineOfBusiness": "Annuity",
+                  "ProductType": "Indexed Annuity - not otherwise specified",
+                  "CusipNum": "31578L142",
+                  "Annuity": {
+                    "QualPlanType": "Non-Qualified",
+                    "Payout": {
+                      "PayoutAmt": 10000
+                    }
+                  },
+                  "ApplicationInfo": {
+                    "ApplicationJurisdiction": "Alaska",
+                    "ApplicationCollectionDate": "2022-06-17",
+                    "ApplicationCollectionTime": "10:33:00.6510643-04:00"
+                  }
+                }
+              },
+              "Party": {
+                "PartyTypeCode": "Person",
+                "Producer": {
+                  "CarrierAppointment": {
+                    "CompanyProducerID": 454223,
+                    "CarrierCode": "FGL"
+                  }
+                }
+              },  
+              //"Relation": {
+              //  "OriginatingObjectType": "Holding",
+              //  "RelatedObjectType": "OLI_PARTY",
+              //  "RelationRoleCode": "OLI_REL_PRIMAGENT",
+              //  "RelatedRefID": 454223,
+              //  "RelatedRefIDType": "Carrier Assigned Producer Identification Number"
+              //}
+            }
+          }
+        }
+      }
+    }
+  }
+}

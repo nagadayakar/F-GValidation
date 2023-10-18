@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:Fglife.AgentService.Contracts.ServiceContracts">
+  <soapenv:Header>
+    <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsse:UsernameToken wsu:Id="UsernameToken-400627681" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsse:Username>NTTAgtVldWSqauser</wsse:Username>
+        <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">VcN-zG29])</wsse:Password>
+      </wsse:UsernameToken>
+    </wsse:Security>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ns0:GetEAppAgentValidationDetails xmlns:ns0="urn:Fglife.AgentService.Contracts.ServiceContracts">
+      <request>
+        <TXLifeRequest xmlns="">
+          <TransRefGUID>dfeb2b11-3552-4b96-af98-2eff7f6eead7</TransRefGUID>
+          <TransType tc="228">Producer Inquiry</TransType>
+          <TransSubType tc="22810">Can Producer Sell</TransSubType>
+          <TransExeDate>2022-06-17</TransExeDate>
+          <TransExeTime>10:33:00.6354377-04:00</TransExeTime>
+          <OLifE>
+            <SourceInfo>
+              <SourceInfoName>FireLightEApp</SourceInfoName>
+            </SourceInfo>
+            <Holding id="Holding_4c739778-5bc0-4391-9ca2-d4baaac5a29f">
+              <HoldingTypeCode tc="2">Policy</HoldingTypeCode>
+              <CurrencyTypeCode tc="840">USD (United States Dollar)</CurrencyTypeCode>
+              <Policy>
+                <LineOfBusiness tc="2">Annuity</LineOfBusiness>
+                <ProductType tc="11">Indexed Annuity - not otherwise specified</ProductType>
+                <CusipNum>31578L142</CusipNum>
+                <Annuity>
+                  <QualPlanType tc="1">Non-Qualified</QualPlanType>
+                  <Payout>
+                    <PayoutAmt>10000.00</PayoutAmt>
+                  </Payout>
+                </Annuity>
+                <ApplicationInfo>
+                  <ApplicationJurisdiction tc="2">Alaska</ApplicationJurisdiction>
+                  <ApplicationCollectionDate>2022-06-17</ApplicationCollectionDate>
+                  <ApplicationCollectionTime>10:33:00.6510643-04:00</ApplicationCollectionTime>
+                </ApplicationInfo>
+              </Policy>
+            </Holding>
+            <Party id="Party_f0eb29a3-356b-4c31-8b4a-aed0666177dc">
+              <PartyTypeCode tc="1">Person</PartyTypeCode>
+              <Producer>
+                <CarrierAppointment id="CarrierAppointment_b2db88d2-e05c-48f0-9ab6-d8dbe791ca1c">
+                  <CompanyProducerID>000454223</CompanyProducerID>
+                  <CarrierCode>FGL</CarrierCode>
+                </CarrierAppointment>
+              </Producer>
+            </Party>
+            <Relation id="Relation_ee90f802-c50b-4dfd-b0c9-d2f3d1a8c54a" OriginatingObjectID="Holding_4c739778-5bc0-4391-9ca2-d4baaac5a29f" RelatedObjectID="Party_f0eb29a3-356b-4c31-8b4a-aed0666177dc">
+              <OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+              <RelatedObjectType tc="6">OLI_PARTY</RelatedObjectType>
+              <RelationRoleCode tc="37">OLI_REL_PRIMAGENT</RelationRoleCode>
+              <RelatedRefID>000454223</RelatedRefID>
+              <RelatedRefIDType tc="33">Carrier Assigned Producer Identification Number</RelatedRefIDType>
+            </Relation>
+          </OLifE>
+        </TXLifeRequest>
+      </request>
+    </ns0:GetEAppAgentValidationDetails>
+  </soapenv:Body>
+</soapenv:Envelope>
